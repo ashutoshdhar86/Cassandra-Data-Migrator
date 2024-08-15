@@ -1,0 +1,9 @@
+24/08/02 12:48:57 INFO Migrate$: ################################################################################################
+24/08/02 12:48:57 INFO Migrate$: ###                                  Migrate Job - Starting                                  ###
+24/08/02 12:48:57 INFO Migrate$: ################################################################################################
+24/08/02 12:48:57 INFO SparkContext: Running Spark version 3.5.1
+24/08/02 12:48:57 INFO SparkContext: OS info Linux, 4.18.0-553.6.1.el8.x86_64, amd64
+24/08/02 12:48:57 INFO SparkContext: Java version 11.0.20.1
+24/08/02 12:48:57 INFO ShutdownHookManager: Shutdown hook called
+24/08/02 12:48:57 INFO ShutdownHookManager: Deleting directory /tmp/spark-aa1e2eae-5af7-4e8a-8ac8-fe1ad9cd4cbc
+24/08/02 12:48:57 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable

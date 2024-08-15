@@ -1,0 +1,190 @@
+24/08/02 12:06:15 INFO Migrate$: ################################################################################################
+24/08/02 12:06:15 INFO Migrate$: ###                                  Migrate Job - Starting                                  ###
+24/08/02 12:06:15 INFO Migrate$: ################################################################################################
+24/08/02 12:06:15 INFO SparkContext: Running Spark version 3.5.1
+24/08/02 12:06:15 INFO SparkContext: OS info Linux, 4.18.0-553.6.1.el8.x86_64, amd64
+24/08/02 12:06:15 INFO SparkContext: Java version 11.0.20.1
+24/08/02 12:06:15 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+24/08/02 12:06:15 INFO ResourceUtils: ==============================================================
+24/08/02 12:06:15 INFO ResourceUtils: No custom resources configured for spark.driver.
+24/08/02 12:06:15 INFO ResourceUtils: ==============================================================
+24/08/02 12:06:15 INFO SparkContext: Submitted application: Migrate Job
+24/08/02 12:06:15 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+24/08/02 12:06:15 INFO ResourceProfile: Limiting resource is cpu
+24/08/02 12:06:15 INFO ResourceProfileManager: Added ResourceProfile id: 0
+24/08/02 12:06:15 INFO SecurityManager: Changing view acls to: automaton
+24/08/02 12:06:15 INFO SecurityManager: Changing modify acls to: automaton
+24/08/02 12:06:15 INFO SecurityManager: Changing view acls groups to: 
+24/08/02 12:06:15 INFO SecurityManager: Changing modify acls groups to: 
+24/08/02 12:06:15 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: automaton; groups with view permissions: EMPTY; users with modify permissions: automaton; groups with modify permissions: EMPTY
+24/08/02 12:06:16 INFO Utils: Successfully started service 'sparkDriver' on port 44133.
+24/08/02 12:06:16 INFO SparkEnv: Registering MapOutputTracker
+24/08/02 12:06:16 INFO SparkEnv: Registering BlockManagerMaster
+24/08/02 12:06:16 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+24/08/02 12:06:16 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+24/08/02 12:06:16 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+24/08/02 12:06:16 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-45a7bc21-a696-4016-a449-e0aa26f793a9
+24/08/02 12:06:16 INFO MemoryStore: MemoryStore started with capacity 1048.8 MiB
+24/08/02 12:06:16 INFO SparkEnv: Registering OutputCommitCoordinator
+24/08/02 12:06:16 INFO JettyUtils: Start Jetty 0.0.0.0:4040 for SparkUI
+24/08/02 12:06:16 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+24/08/02 12:06:16 INFO SparkContext: Added JAR file:/home/automaton/LAB_cassandra-data-migrator-4.3.4/cassandra-data-migrator-4.3.4.jar at spark://ip-10-166-69-127.us-west-2.compute.internal:44133/jars/cassandra-data-migrator-4.3.4.jar with timestamp 1722600375543
+24/08/02 12:06:17 INFO Executor: Starting executor ID driver on host ip-10-166-69-127.us-west-2.compute.internal
+24/08/02 12:06:17 INFO Executor: OS info Linux, 4.18.0-553.6.1.el8.x86_64, amd64
+24/08/02 12:06:17 INFO Executor: Java version 11.0.20.1
+24/08/02 12:06:17 INFO Executor: Starting executor with user classpath (userClassPathFirst = false): ''
+24/08/02 12:06:17 INFO Executor: Created or updated repl class loader org.apache.spark.util.MutableURLClassLoader@341b13a8 for default.
+24/08/02 12:06:17 INFO Executor: Fetching spark://ip-10-166-69-127.us-west-2.compute.internal:44133/jars/cassandra-data-migrator-4.3.4.jar with timestamp 1722600375543
+24/08/02 12:06:17 INFO TransportClientFactory: Successfully created connection to ip-10-166-69-127.us-west-2.compute.internal/10.166.69.127:44133 after 39 ms (0 ms spent in bootstraps)
+24/08/02 12:06:17 INFO Utils: Fetching spark://ip-10-166-69-127.us-west-2.compute.internal:44133/jars/cassandra-data-migrator-4.3.4.jar to /tmp/spark-f1c4c1ca-fedf-4260-8d7a-8a3f910be386/userFiles-c8cb6efd-08da-44f9-a48f-9c2fde4bd18f/fetchFileTemp5193745455372702851.tmp
+24/08/02 12:06:17 INFO Executor: Adding file:/tmp/spark-f1c4c1ca-fedf-4260-8d7a-8a3f910be386/userFiles-c8cb6efd-08da-44f9-a48f-9c2fde4bd18f/cassandra-data-migrator-4.3.4.jar to class loader default
+24/08/02 12:06:17 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 35791.
+24/08/02 12:06:17 INFO NettyBlockTransferService: Server created on ip-10-166-69-127.us-west-2.compute.internal:35791
+24/08/02 12:06:17 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+24/08/02 12:06:17 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, ip-10-166-69-127.us-west-2.compute.internal, 35791, None)
+24/08/02 12:06:17 INFO BlockManagerMasterEndpoint: Registering block manager ip-10-166-69-127.us-west-2.compute.internal:35791 with 1048.8 MiB RAM, BlockManagerId(driver, ip-10-166-69-127.us-west-2.compute.internal, 35791, None)
+24/08/02 12:06:17 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, ip-10-166-69-127.us-west-2.compute.internal, 35791, None)
+24/08/02 12:06:17 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, ip-10-166-69-127.us-west-2.compute.internal, 35791, None)
+24/08/02 12:06:17 INFO PropertyHelper: Processing explicitly set and known sparkConf properties
+24/08/02 12:06:17 INFO PropertyHelper: Known property [spark.cdm.autocorrect.missing] is configured with value [false] and is type [BOOLEAN]
+24/08/02 12:06:17 INFO PropertyHelper: Known property [spark.cdm.schema.origin.keyspaceTable] is configured with value [ks1.cdm] and is type [STRING]
+24/08/02 12:06:17 INFO PropertyHelper: Known property [spark.cdm.perfops.batchSize] is configured with value [5] and is type [NUMBER]
+24/08/02 12:06:17 INFO PropertyHelper: Known property [spark.cdm.perfops.ratelimit.origin] is configured with value [20000] and is type [NUMBER]
+24/08/02 12:06:17 INFO PropertyHelper: Known property [spark.cdm.connect.origin.host] is configured with value [10.166.65.33] and is type [STRING]
+24/08/02 12:06:17 INFO PropertyHelper: Known property [spark.cdm.autocorrect.missing.counter] is configured with value [false] and is type [BOOLEAN]
+24/08/02 12:06:17 INFO PropertyHelper: Known property [spark.cdm.connect.origin.password] is configured with value [********] and is type [STRING]
+24/08/02 12:06:17 INFO PropertyHelper: Known property [spark.cdm.trackRun.previousRunId] is configured with value [0] and is type [NUMBER]
+24/08/02 12:06:17 INFO PropertyHelper: Known property [spark.cdm.trackRun] is configured with value [true] and is type [BOOLEAN]
+24/08/02 12:06:17 INFO PropertyHelper: Known property [spark.cdm.connect.target.password] is configured with value [********] and is type [STRING]
+24/08/02 12:06:17 INFO PropertyHelper: Known property [spark.cdm.connect.target.username] is configured with value [cassandra] and is type [STRING]
+24/08/02 12:06:17 INFO PropertyHelper: Known property [spark.cdm.perfops.ratelimit.target] is configured with value [20000] and is type [NUMBER]
+24/08/02 12:06:17 INFO PropertyHelper: Known property [spark.cdm.autocorrect.mismatch] is configured with value [false] and is type [BOOLEAN]
+24/08/02 12:06:17 INFO PropertyHelper: Known property [spark.cdm.connect.target.host] is configured with value [10.166.65.248] and is type [STRING]
+24/08/02 12:06:17 INFO PropertyHelper: Known property [spark.cdm.perfops.numParts] is configured with value [10000] and is type [NUMBER]
+24/08/02 12:06:17 INFO PropertyHelper: Known property [spark.cdm.connect.target.port] is configured with value [9042] and is type [NUMBER]
+24/08/02 12:06:17 INFO PropertyHelper: Known property [spark.cdm.connect.origin.port] is configured with value [9042] and is type [NUMBER]
+24/08/02 12:06:17 INFO PropertyHelper: Known property [spark.cdm.connect.origin.username] is configured with value [cassandra] and is type [STRING]
+24/08/02 12:06:17 INFO PropertyHelper: Adding any missing known properties that have default values
+24/08/02 12:06:17 INFO ConnectionFetcher: PARAM --  SSL Enabled: false
+24/08/02 12:06:17 INFO ConnectionFetcher: Connecting to ORIGIN at 10.166.65.33:9042
+24/08/02 12:06:19 INFO ConnectionFetcher: PARAM --  SSL Enabled: false
+24/08/02 12:06:19 INFO ConnectionFetcher: Connecting to TARGET at 10.166.65.248:9042
+24/08/02 12:06:19 INFO DefaultMavenCoordinates: Apache Cassandra Java Driver (org.apache.cassandra:java-driver-core-shaded) version 4.18.1
+24/08/02 12:06:19 INFO CqlPrepareAsyncProcessor: Adding handler to invalidate cached prepared statements on type changes
+24/08/02 12:06:20 INFO Clock: Using native clock for microsecond precision
+24/08/02 12:06:20 WARN PlainTextAuthProviderBase: [] /10.166.65.33:9042 did not send an authentication challenge; This is suspicious because the driver expects authentication
+24/08/02 12:06:20 WARN DefaultTopologyMonitor: [s0] Unable to determine broadcast RPC port.  Trying to fall back to port used by the control connection.
+24/08/02 12:06:21 WARN PlainTextAuthProviderBase: [] /10.166.65.33:9042 did not send an authentication challenge; This is suspicious because the driver expects authentication
+24/08/02 12:06:21 INFO CassandraConnector: Connected to Cassandra cluster.
+24/08/02 12:06:21 INFO Migrate$: PARAM -- Min Partition: -9223372036854775808
+24/08/02 12:06:21 INFO Migrate$: PARAM -- Max Partition: 9223372036854775807
+24/08/02 12:06:21 INFO Migrate$: PARAM -- Number of Splits : 10000
+24/08/02 12:06:21 INFO Migrate$: PARAM -- Track Run : true
+24/08/02 12:06:21 INFO Migrate$: PARAM -- Previous RunId : 0
+24/08/02 12:06:21 INFO Migrate$: PARAM -- Coverage Percent: 100
+24/08/02 12:06:21 INFO CqlPrepareAsyncProcessor: Adding handler to invalidate cached prepared statements on type changes
+24/08/02 12:06:21 INFO Clock: Using native clock for microsecond precision
+24/08/02 12:06:21 WARN ControlConnection: [s1] Error connecting to Node(endPoint=/10.166.65.248:9042, hostId=null, hashCode=1acf8668), trying next node (ConnectionInitException: [s1|control|connecting...] Protocol initialization request, step 1 (OPTIONS): failed to send request (com.datastax.oss.driver.shaded.netty.channel.StacklessClosedChannelException))
+Exception in thread "main" java.io.IOException: Failed to open native connection to Cassandra at {10.166.65.248:9042} :: Could not reach any contact point, make sure you've provided valid addresses (showing first 1 nodes, use getAllErrors() for more): Node(endPoint=/10.166.65.248:9042, hostId=null, hashCode=1acf8668): [com.datastax.oss.driver.api.core.connection.ConnectionInitException: [s1|control|connecting...] Protocol initialization request, step 1 (OPTIONS): failed to send request (com.datastax.oss.driver.shaded.netty.channel.StacklessClosedChannelException)]
+	at com.datastax.spark.connector.cql.CassandraConnector$.createSession(CassandraConnector.scala:173)
+	at com.datastax.spark.connector.cql.CassandraConnector$.$anonfun$sessionCache$1(CassandraConnector.scala:161)
+	at com.datastax.spark.connector.cql.RefCountedCache.createNewValueAndKeys(RefCountedCache.scala:32)
+	at com.datastax.spark.connector.cql.RefCountedCache.syncAcquire(RefCountedCache.scala:69)
+	at com.datastax.spark.connector.cql.RefCountedCache.acquire(RefCountedCache.scala:57)
+	at com.datastax.spark.connector.cql.CassandraConnector.openSession(CassandraConnector.scala:81)
+	at com.datastax.spark.connector.cql.CassandraConnector.withSessionDo(CassandraConnector.scala:103)
+	at com.datastax.cdm.job.BasePartitionJob.getParts(BasePartitionJob.scala:37)
+	at com.datastax.cdm.job.BaseJob.setup(BaseJob.scala:92)
+	at com.datastax.cdm.job.Migrate$.delayedEndpoint$com$datastax$cdm$job$Migrate$1(Migrate.scala:19)
+	at com.datastax.cdm.job.Migrate$delayedInit$body.apply(Migrate.scala:18)
+	at scala.Function0.apply$mcV$sp(Function0.scala:39)
+	at scala.Function0.apply$mcV$sp$(Function0.scala:39)
+	at scala.runtime.AbstractFunction0.apply$mcV$sp(AbstractFunction0.scala:17)
+	at scala.App.$anonfun$main$1(App.scala:76)
+	at scala.App.$anonfun$main$1$adapted(App.scala:76)
+	at scala.collection.IterableOnceOps.foreach(IterableOnce.scala:563)
+	at scala.collection.IterableOnceOps.foreach$(IterableOnce.scala:561)
+	at scala.collection.AbstractIterable.foreach(Iterable.scala:926)
+	at scala.App.main(App.scala:76)
+	at scala.App.main$(App.scala:74)
+	at com.datastax.cdm.job.BaseJob.main(BaseJob.scala:32)
+	at com.datastax.cdm.job.Migrate.main(Migrate.scala)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.spark.deploy.JavaMainApplication.start(SparkApplication.scala:52)
+	at org.apache.spark.deploy.SparkSubmit.org$apache$spark$deploy$SparkSubmit$$runMain(SparkSubmit.scala:1029)
+	at org.apache.spark.deploy.SparkSubmit.doRunMain$1(SparkSubmit.scala:194)
+	at org.apache.spark.deploy.SparkSubmit.submit(SparkSubmit.scala:217)
+	at org.apache.spark.deploy.SparkSubmit.doSubmit(SparkSubmit.scala:91)
+	at org.apache.spark.deploy.SparkSubmit$$anon$2.doSubmit(SparkSubmit.scala:1120)
+	at org.apache.spark.deploy.SparkSubmit$.main(SparkSubmit.scala:1129)
+	at org.apache.spark.deploy.SparkSubmit.main(SparkSubmit.scala)
+Caused by: com.datastax.oss.driver.api.core.AllNodesFailedException: Could not reach any contact point, make sure you've provided valid addresses (showing first 1 nodes, use getAllErrors() for more): Node(endPoint=/10.166.65.248:9042, hostId=null, hashCode=1acf8668): [com.datastax.oss.driver.api.core.connection.ConnectionInitException: [s1|control|connecting...] Protocol initialization request, step 1 (OPTIONS): failed to send request (com.datastax.oss.driver.shaded.netty.channel.StacklessClosedChannelException)]
+	at com.datastax.oss.driver.api.core.AllNodesFailedException.copy(AllNodesFailedException.java:143)
+	at com.datastax.oss.driver.internal.core.util.concurrent.CompletableFutures.getUninterruptibly(CompletableFutures.java:151)
+	at com.datastax.oss.driver.api.core.session.SessionBuilder.build(SessionBuilder.java:837)
+	at com.datastax.spark.connector.cql.DefaultConnectionFactory$.createSession(CassandraConnectionFactory.scala:143)
+	at com.datastax.spark.connector.cql.CassandraConnector$.createSession(CassandraConnector.scala:167)
+	... 34 more
+	Suppressed: com.datastax.oss.driver.api.core.connection.ConnectionInitException: [s1|control|connecting...] Protocol initialization request, step 1 (OPTIONS): failed to send request (com.datastax.oss.driver.shaded.netty.channel.StacklessClosedChannelException)
+		at com.datastax.oss.driver.internal.core.channel.ProtocolInitHandler$InitRequest.fail(ProtocolInitHandler.java:358)
+		at com.datastax.oss.driver.internal.core.channel.ChannelHandlerRequest.writeListener(ChannelHandlerRequest.java:89)
+		at com.datastax.oss.driver.shaded.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:590)
+		at com.datastax.oss.driver.shaded.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:557)
+		at com.datastax.oss.driver.shaded.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:492)
+		at com.datastax.oss.driver.shaded.netty.util.concurrent.DefaultPromise.addListener(DefaultPromise.java:185)
+		at com.datastax.oss.driver.shaded.netty.channel.DefaultChannelPromise.addListener(DefaultChannelPromise.java:95)
+		at com.datastax.oss.driver.shaded.netty.channel.DefaultChannelPromise.addListener(DefaultChannelPromise.java:30)
+		at com.datastax.oss.driver.internal.core.channel.ChannelHandlerRequest.send(ChannelHandlerRequest.java:78)
+		at com.datastax.oss.driver.internal.core.channel.ProtocolInitHandler$InitRequest.send(ProtocolInitHandler.java:195)
+		at com.datastax.oss.driver.internal.core.channel.ProtocolInitHandler.onRealConnect(ProtocolInitHandler.java:126)
+		at com.datastax.oss.driver.internal.core.channel.ConnectInitHandler.lambda$connect$0(ConnectInitHandler.java:59)
+		at com.datastax.oss.driver.shaded.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:590)
+		at com.datastax.oss.driver.shaded.netty.util.concurrent.DefaultPromise.notifyListeners0(DefaultPromise.java:583)
+		at com.datastax.oss.driver.shaded.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:559)
+		at com.datastax.oss.driver.shaded.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:492)
+		at com.datastax.oss.driver.shaded.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:636)
+		at com.datastax.oss.driver.shaded.netty.util.concurrent.DefaultPromise.setFailure0(DefaultPromise.java:629)
+		at com.datastax.oss.driver.shaded.netty.util.concurrent.DefaultPromise.tryFailure(DefaultPromise.java:118)
+		at com.datastax.oss.driver.shaded.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.fulfillConnectPromise(AbstractNioChannel.java:321)
+		at com.datastax.oss.driver.shaded.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:337)
+		at com.datastax.oss.driver.shaded.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+		at com.datastax.oss.driver.shaded.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+		at com.datastax.oss.driver.shaded.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+		at com.datastax.oss.driver.shaded.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+		at com.datastax.oss.driver.shaded.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+		at com.datastax.oss.driver.shaded.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+		at com.datastax.oss.driver.shaded.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+		at java.base/java.lang.Thread.run(Thread.java:829)
+		Suppressed: com.datastax.oss.driver.shaded.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: /10.166.65.248:9042
+		Caused by: java.net.ConnectException: Connection refused
+			at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+			at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777)
+			at com.datastax.oss.driver.shaded.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+			at com.datastax.oss.driver.shaded.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+			at com.datastax.oss.driver.shaded.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+			at com.datastax.oss.driver.shaded.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+			at com.datastax.oss.driver.shaded.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+			at com.datastax.oss.driver.shaded.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+			at com.datastax.oss.driver.shaded.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+			at com.datastax.oss.driver.shaded.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+			at com.datastax.oss.driver.shaded.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+			at java.base/java.lang.Thread.run(Thread.java:829)
+	Caused by: com.datastax.oss.driver.shaded.netty.channel.StacklessClosedChannelException
+		at com.datastax.oss.driver.shaded.netty.channel.AbstractChannel$AbstractUnsafe.flush0()(Unknown Source)
+24/08/02 12:06:22 INFO SparkContext: Invoking stop() from shutdown hook
+24/08/02 12:06:22 INFO SparkContext: SparkContext is stopping with exitCode 0.
+24/08/02 12:06:22 INFO SparkUI: Stopped Spark web UI at http://ip-10-166-69-127.us-west-2.compute.internal:4040
+24/08/02 12:06:22 INFO CassandraConnector: Disconnected from Cassandra cluster.
+24/08/02 12:06:22 INFO SerialShutdownHooks: Successfully executed shutdown hook: Clearing session cache for C* connector
+24/08/02 12:06:22 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+24/08/02 12:06:22 INFO MemoryStore: MemoryStore cleared
+24/08/02 12:06:22 INFO BlockManager: BlockManager stopped
+24/08/02 12:06:22 INFO BlockManagerMaster: BlockManagerMaster stopped
+24/08/02 12:06:22 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+24/08/02 12:06:22 INFO SparkContext: Successfully stopped SparkContext
+24/08/02 12:06:22 INFO ShutdownHookManager: Shutdown hook called
+24/08/02 12:06:22 INFO ShutdownHookManager: Deleting directory /tmp/spark-06f7191e-01fe-4119-8771-602c0a6b31c4
+24/08/02 12:06:22 INFO ShutdownHookManager: Deleting directory /tmp/spark-f1c4c1ca-fedf-4260-8d7a-8a3f910be386

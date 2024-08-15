@@ -1,0 +1,205 @@
+24/08/07 00:59:03 INFO DiffData$: ################################################################################################
+24/08/07 00:59:03 INFO DiffData$: ###                              Data Validation Job - Starting                              ###
+24/08/07 00:59:03 INFO DiffData$: ################################################################################################
+24/08/07 00:59:03 INFO SparkContext: Running Spark version 3.5.1
+24/08/07 00:59:03 INFO SparkContext: OS info Linux, 4.18.0-553.6.1.el8.x86_64, amd64
+24/08/07 00:59:03 INFO SparkContext: Java version 11.0.20.1
+24/08/07 00:59:04 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+24/08/07 00:59:04 INFO ResourceUtils: ==============================================================
+24/08/07 00:59:04 INFO ResourceUtils: No custom resources configured for spark.driver.
+24/08/07 00:59:04 INFO ResourceUtils: ==============================================================
+24/08/07 00:59:04 INFO SparkContext: Submitted application: Data Validation Job
+24/08/07 00:59:04 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+24/08/07 00:59:04 INFO ResourceProfile: Limiting resource is cpu
+24/08/07 00:59:04 INFO ResourceProfileManager: Added ResourceProfile id: 0
+24/08/07 00:59:04 INFO SecurityManager: Changing view acls to: automaton
+24/08/07 00:59:04 INFO SecurityManager: Changing modify acls to: automaton
+24/08/07 00:59:04 INFO SecurityManager: Changing view acls groups to: 
+24/08/07 00:59:04 INFO SecurityManager: Changing modify acls groups to: 
+24/08/07 00:59:04 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: automaton; groups with view permissions: EMPTY; users with modify permissions: automaton; groups with modify permissions: EMPTY
+24/08/07 00:59:04 INFO Utils: Successfully started service 'sparkDriver' on port 44693.
+24/08/07 00:59:04 INFO SparkEnv: Registering MapOutputTracker
+24/08/07 00:59:04 INFO SparkEnv: Registering BlockManagerMaster
+24/08/07 00:59:04 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+24/08/07 00:59:04 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+24/08/07 00:59:04 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+24/08/07 00:59:05 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-1ea529c5-5e0d-4148-abb9-e5d1046eb0b1
+24/08/07 00:59:05 INFO MemoryStore: MemoryStore started with capacity 1048.8 MiB
+24/08/07 00:59:05 INFO SparkEnv: Registering OutputCommitCoordinator
+24/08/07 00:59:05 INFO JettyUtils: Start Jetty 0.0.0.0:4040 for SparkUI
+24/08/07 00:59:05 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+24/08/07 00:59:05 INFO SparkContext: Added JAR file:/home/automaton/LAB_cassandra-data-migrator-4.3.4/cassandra-data-migrator-4.3.4.jar at spark://ip-10-166-69-127.us-west-2.compute.internal:44693/jars/cassandra-data-migrator-4.3.4.jar with timestamp 1722992343931
+24/08/07 00:59:05 INFO Executor: Starting executor ID driver on host ip-10-166-69-127.us-west-2.compute.internal
+24/08/07 00:59:05 INFO Executor: OS info Linux, 4.18.0-553.6.1.el8.x86_64, amd64
+24/08/07 00:59:05 INFO Executor: Java version 11.0.20.1
+24/08/07 00:59:05 INFO Executor: Starting executor with user classpath (userClassPathFirst = false): ''
+24/08/07 00:59:05 INFO Executor: Created or updated repl class loader org.apache.spark.util.MutableURLClassLoader@5f14761c for default.
+24/08/07 00:59:05 INFO Executor: Fetching spark://ip-10-166-69-127.us-west-2.compute.internal:44693/jars/cassandra-data-migrator-4.3.4.jar with timestamp 1722992343931
+24/08/07 00:59:05 INFO TransportClientFactory: Successfully created connection to ip-10-166-69-127.us-west-2.compute.internal/10.166.69.127:44693 after 51 ms (0 ms spent in bootstraps)
+24/08/07 00:59:05 INFO Utils: Fetching spark://ip-10-166-69-127.us-west-2.compute.internal:44693/jars/cassandra-data-migrator-4.3.4.jar to /tmp/spark-3dc630e5-d5d4-45e3-b0b9-bc4d1e0c9f1f/userFiles-4611e275-bc7c-41f3-aff4-bf31848c7808/fetchFileTemp11403731713487965673.tmp
+24/08/07 00:59:05 INFO Executor: Adding file:/tmp/spark-3dc630e5-d5d4-45e3-b0b9-bc4d1e0c9f1f/userFiles-4611e275-bc7c-41f3-aff4-bf31848c7808/cassandra-data-migrator-4.3.4.jar to class loader default
+24/08/07 00:59:05 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 41847.
+24/08/07 00:59:05 INFO NettyBlockTransferService: Server created on ip-10-166-69-127.us-west-2.compute.internal:41847
+24/08/07 00:59:05 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+24/08/07 00:59:05 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, ip-10-166-69-127.us-west-2.compute.internal, 41847, None)
+24/08/07 00:59:05 INFO BlockManagerMasterEndpoint: Registering block manager ip-10-166-69-127.us-west-2.compute.internal:41847 with 1048.8 MiB RAM, BlockManagerId(driver, ip-10-166-69-127.us-west-2.compute.internal, 41847, None)
+24/08/07 00:59:05 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, ip-10-166-69-127.us-west-2.compute.internal, 41847, None)
+24/08/07 00:59:05 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, ip-10-166-69-127.us-west-2.compute.internal, 41847, None)
+24/08/07 00:59:06 INFO PropertyHelper: Processing explicitly set and known sparkConf properties
+24/08/07 00:59:06 INFO PropertyHelper: Known property [spark.cdm.schema.origin.keyspaceTable] is configured with value [ks1.cdm] and is type [STRING]
+24/08/07 00:59:06 INFO PropertyHelper: Known property [spark.cdm.perfops.batchSize] is configured with value [5] and is type [NUMBER]
+24/08/07 00:59:06 INFO PropertyHelper: Known property [spark.cdm.perfops.ratelimit.origin] is configured with value [20000] and is type [NUMBER]
+24/08/07 00:59:06 INFO PropertyHelper: Known property [spark.cdm.connect.origin.host] is configured with value [10.166.65.33] and is type [STRING]
+24/08/07 00:59:06 INFO PropertyHelper: Known property [spark.cdm.perfops.numParts] is configured with value [10] and is type [NUMBER]
+24/08/07 00:59:06 INFO PropertyHelper: Known property [spark.cdm.autocorrect.missing.counter] is configured with value [false] and is type [BOOLEAN]
+24/08/07 00:59:06 INFO PropertyHelper: Known property [spark.cdm.connect.origin.password] is configured with value [********] and is type [STRING]
+24/08/07 00:59:06 INFO PropertyHelper: Known property [spark.cdm.trackRun.previousRunId] is configured with value [0] and is type [NUMBER]
+24/08/07 00:59:06 INFO PropertyHelper: Known property [spark.cdm.trackRun] is configured with value [true] and is type [BOOLEAN]
+24/08/07 00:59:06 INFO PropertyHelper: Known property [spark.cdm.connect.target.password] is configured with value [********] and is type [STRING]
+24/08/07 00:59:06 INFO PropertyHelper: Known property [spark.cdm.connect.target.username] is configured with value [cassandra] and is type [STRING]
+24/08/07 00:59:06 INFO PropertyHelper: Known property [spark.cdm.perfops.ratelimit.target] is configured with value [20000] and is type [NUMBER]
+24/08/07 00:59:06 INFO PropertyHelper: Known property [spark.cdm.autocorrect.missing] is configured with value [true] and is type [BOOLEAN]
+24/08/07 00:59:06 INFO PropertyHelper: Known property [spark.cdm.autocorrect.mismatch] is configured with value [false] and is type [BOOLEAN]
+24/08/07 00:59:06 INFO PropertyHelper: Known property [spark.cdm.connect.target.host] is configured with value [10.166.65.248] and is type [STRING]
+24/08/07 00:59:06 INFO PropertyHelper: Known property [spark.cdm.connect.target.port] is configured with value [9042] and is type [NUMBER]
+24/08/07 00:59:06 INFO PropertyHelper: Known property [spark.cdm.connect.origin.port] is configured with value [9042] and is type [NUMBER]
+24/08/07 00:59:06 INFO PropertyHelper: Known property [spark.cdm.connect.origin.username] is configured with value [cassandra] and is type [STRING]
+24/08/07 00:59:06 INFO PropertyHelper: Adding any missing known properties that have default values
+24/08/07 00:59:06 INFO ConnectionFetcher: PARAM --  SSL Enabled: false
+24/08/07 00:59:06 INFO ConnectionFetcher: Connecting to ORIGIN at 10.166.65.33:9042
+24/08/07 00:59:07 INFO ConnectionFetcher: PARAM --  SSL Enabled: false
+24/08/07 00:59:07 INFO ConnectionFetcher: Connecting to TARGET at 10.166.65.248:9042
+24/08/07 00:59:08 INFO DefaultMavenCoordinates: Apache Cassandra Java Driver (org.apache.cassandra:java-driver-core-shaded) version 4.18.1
+24/08/07 00:59:08 INFO CqlPrepareAsyncProcessor: Adding handler to invalidate cached prepared statements on type changes
+24/08/07 00:59:09 INFO Clock: Using native clock for microsecond precision
+24/08/07 00:59:09 WARN PlainTextAuthProviderBase: [] /10.166.65.33:9042 did not send an authentication challenge; This is suspicious because the driver expects authentication
+24/08/07 00:59:09 WARN DefaultTopologyMonitor: [s0] Unable to determine broadcast RPC port.  Trying to fall back to port used by the control connection.
+24/08/07 00:59:09 WARN PlainTextAuthProviderBase: [] /10.166.65.33:9042 did not send an authentication challenge; This is suspicious because the driver expects authentication
+24/08/07 00:59:10 INFO CassandraConnector: Connected to Cassandra cluster.
+24/08/07 00:59:10 INFO DiffData$: PARAM -- Min Partition: -9223372036854775808
+24/08/07 00:59:10 INFO DiffData$: PARAM -- Max Partition: 9223372036854775807
+24/08/07 00:59:10 INFO DiffData$: PARAM -- Number of Splits : 10
+24/08/07 00:59:10 INFO DiffData$: PARAM -- Track Run : true
+24/08/07 00:59:10 INFO DiffData$: PARAM -- Previous RunId : 0
+24/08/07 00:59:10 INFO DiffData$: PARAM -- Coverage Percent: 100
+24/08/07 00:59:10 INFO CqlPrepareAsyncProcessor: Adding handler to invalidate cached prepared statements on type changes
+24/08/07 00:59:10 INFO Clock: Using native clock for microsecond precision
+24/08/07 00:59:10 WARN PlainTextAuthProviderBase: [] /10.166.65.248:9042 did not send an authentication challenge; This is suspicious because the driver expects authentication
+24/08/07 00:59:10 WARN PlainTextAuthProviderBase: [] /10.166.65.248:9042 did not send an authentication challenge; This is suspicious because the driver expects authentication
+24/08/07 00:59:10 INFO CassandraConnector: Connected to Cassandra cluster.
+24/08/07 00:59:10 INFO SplitPartitions: ThreadID: 1 Splitting min: -9223372036854775808 max: 9223372036854775807
+24/08/07 00:59:10 INFO DiffData$: PARAM Calculated -- Total Partitions: 10
+24/08/07 00:59:10 INFO DiffData$: Spark parallelize created : 10 slices!
+24/08/07 00:59:10 INFO DiffJobSession: PARAM -- Origin Rate Limit: 20000.0
+24/08/07 00:59:10 INFO DiffJobSession: PARAM -- Target Rate Limit: 20000.0
+24/08/07 00:59:10 INFO WritetimeTTL: PARAM -- Automatic TTLCols: [c3, c4]
+24/08/07 00:59:10 INFO WritetimeTTL: PARAM -- Automatic WriteTimestampCols: [c3, c4]
+24/08/07 00:59:10 INFO WritetimeTTL: Feature WritetimeTTL is enabled
+24/08/07 00:59:10 INFO DiffJobSession: CQL -- origin select: SELECT pk1,ck1,c3,c4,TTL(c3),TTL(c4),WRITETIME(c3),WRITETIME(c4) FROM ks1.cdm WHERE TOKEN(pk1) >= ? AND TOKEN(pk1) <= ? ALLOW FILTERING
+24/08/07 00:59:10 INFO DiffJobSession: CQL -- target select: SELECT pk1,ck1,c3,c4 FROM ks1.cdm WHERE pk1=? AND ck1=?
+24/08/07 00:59:11 INFO DiffJobSession: CQL -- target upsert: INSERT INTO ks1.cdm (pk1,ck1,c3,c4) VALUES (?,?,?,?) USING TTL ? AND TIMESTAMP ?
+24/08/07 00:59:11 INFO DiffJobSession: PARAM -- Autocorrect Missing: true
+24/08/07 00:59:11 INFO DiffJobSession: PARAM -- Autocorrect Mismatch: false
+24/08/07 00:59:11 INFO DiffJobSession: CQL -- origin select: SELECT pk1,ck1,c3,c4,TTL(c3),TTL(c4),WRITETIME(c3),WRITETIME(c4) FROM ks1.cdm WHERE TOKEN(pk1) >= ? AND TOKEN(pk1) <= ? ALLOW FILTERING
+24/08/07 00:59:11 INFO DiffJobSession: CQL -- target select: SELECT pk1,ck1,c3,c4 FROM ks1.cdm WHERE pk1=? AND ck1=?
+24/08/07 00:59:11 INFO DiffJobSession: CQL -- target upsert: INSERT INTO ks1.cdm (pk1,ck1,c3,c4) VALUES (?,?,?,?) USING TTL ? AND TIMESTAMP ?
+24/08/07 00:59:11 INFO TrackRun: ###################### Run Id for this job is: 1722992351011 ######################
+24/08/07 00:59:11 INFO SparkContext: Starting job: foreach at DiffData.scala:29
+24/08/07 00:59:11 INFO DAGScheduler: Got job 0 (foreach at DiffData.scala:29) with 10 output partitions
+24/08/07 00:59:11 INFO DAGScheduler: Final stage: ResultStage 0 (foreach at DiffData.scala:29)
+24/08/07 00:59:11 INFO DAGScheduler: Parents of final stage: List()
+24/08/07 00:59:11 INFO DAGScheduler: Missing parents: List()
+24/08/07 00:59:11 INFO DAGScheduler: Submitting ResultStage 0 (ParallelCollectionRDD[0] at parallelize at BaseJob.scala:95), which has no missing parents
+24/08/07 00:59:11 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 3.1 KiB, free 1048.8 MiB)
+24/08/07 00:59:11 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 1855.0 B, free 1048.8 MiB)
+24/08/07 00:59:11 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on ip-10-166-69-127.us-west-2.compute.internal:41847 (size: 1855.0 B, free: 1048.8 MiB)
+24/08/07 00:59:11 INFO SparkContext: Created broadcast 0 from broadcast at DAGScheduler.scala:1585
+24/08/07 00:59:11 INFO DAGScheduler: Submitting 10 missing tasks from ResultStage 0 (ParallelCollectionRDD[0] at parallelize at BaseJob.scala:95) (first 15 tasks are for partitions Vector(0, 1, 2, 3, 4, 5, 6, 7, 8, 9))
+24/08/07 00:59:11 INFO TaskSchedulerImpl: Adding task set 0.0 with 10 tasks resource profile 0
+24/08/07 00:59:11 INFO TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0) (ip-10-166-69-127.us-west-2.compute.internal, executor driver, partition 0, PROCESS_LOCAL, 8317 bytes) 
+24/08/07 00:59:11 INFO TaskSetManager: Starting task 1.0 in stage 0.0 (TID 1) (ip-10-166-69-127.us-west-2.compute.internal, executor driver, partition 1, PROCESS_LOCAL, 8324 bytes) 
+24/08/07 00:59:11 INFO Executor: Running task 1.0 in stage 0.0 (TID 1)
+24/08/07 00:59:11 INFO Executor: Running task 0.0 in stage 0.0 (TID 0)
+24/08/07 00:59:11 INFO DiffJobSession: ThreadID: 68 Processing min: 2 max: 1844674407370955163
+24/08/07 00:59:11 INFO DiffJobSession: ThreadID: 69 Processing min: 7378697629483820650 max: 9223372036854775807
+24/08/07 00:59:11 ERROR DiffJobSession: Missing target row found for key: [5 %% x]
+24/08/07 00:59:11 ERROR DiffJobSession: Missing target row found for key: [1 %% x]
+24/08/07 00:59:11 ERROR DiffJobSession: Inserted missing row in target: [1 %% x]
+24/08/07 00:59:11 ERROR DiffJobSession: Inserted missing row in target: [5 %% x]
+24/08/07 00:59:11 INFO Executor: Finished task 1.0 in stage 0.0 (TID 1). 981 bytes result sent to driver
+24/08/07 00:59:11 INFO Executor: Finished task 0.0 in stage 0.0 (TID 0). 981 bytes result sent to driver
+24/08/07 00:59:11 INFO TaskSetManager: Starting task 2.0 in stage 0.0 (TID 2) (ip-10-166-69-127.us-west-2.compute.internal, executor driver, partition 2, PROCESS_LOCAL, 8317 bytes) 
+24/08/07 00:59:11 INFO Executor: Running task 2.0 in stage 0.0 (TID 2)
+24/08/07 00:59:11 INFO TaskSetManager: Starting task 3.0 in stage 0.0 (TID 3) (ip-10-166-69-127.us-west-2.compute.internal, executor driver, partition 3, PROCESS_LOCAL, 8324 bytes) 
+24/08/07 00:59:11 INFO Executor: Running task 3.0 in stage 0.0 (TID 3)
+24/08/07 00:59:11 INFO DiffJobSession: ThreadID: 69 Processing min: -1844674407370955160 max: 1
+24/08/07 00:59:11 INFO TaskSetManager: Finished task 0.0 in stage 0.0 (TID 0) in 301 ms on ip-10-166-69-127.us-west-2.compute.internal (executor driver) (1/10)
+24/08/07 00:59:11 INFO TaskSetManager: Finished task 1.0 in stage 0.0 (TID 1) in 279 ms on ip-10-166-69-127.us-west-2.compute.internal (executor driver) (2/10)
+24/08/07 00:59:11 INFO DiffJobSession: ThreadID: 68 Processing min: 1844674407370955164 max: 3689348814741910325
+24/08/07 00:59:11 INFO Executor: Finished task 2.0 in stage 0.0 (TID 2). 938 bytes result sent to driver
+24/08/07 00:59:11 INFO Executor: Finished task 3.0 in stage 0.0 (TID 3). 938 bytes result sent to driver
+24/08/07 00:59:11 INFO TaskSetManager: Starting task 4.0 in stage 0.0 (TID 4) (ip-10-166-69-127.us-west-2.compute.internal, executor driver, partition 4, PROCESS_LOCAL, 8324 bytes) 
+24/08/07 00:59:11 INFO Executor: Running task 4.0 in stage 0.0 (TID 4)
+24/08/07 00:59:11 INFO DiffJobSession: ThreadID: 68 Processing min: 3689348814741910326 max: 5534023222112865487
+24/08/07 00:59:11 ERROR DiffJobSession: Missing target row found for key: [2 %% x]
+24/08/07 00:59:11 INFO TaskSetManager: Starting task 5.0 in stage 0.0 (TID 5) (ip-10-166-69-127.us-west-2.compute.internal, executor driver, partition 5, PROCESS_LOCAL, 8324 bytes) 
+24/08/07 00:59:11 INFO TaskSetManager: Finished task 2.0 in stage 0.0 (TID 2) in 83 ms on ip-10-166-69-127.us-west-2.compute.internal (executor driver) (3/10)
+24/08/07 00:59:11 INFO Executor: Running task 5.0 in stage 0.0 (TID 5)
+24/08/07 00:59:11 INFO TaskSetManager: Finished task 3.0 in stage 0.0 (TID 3) in 67 ms on ip-10-166-69-127.us-west-2.compute.internal (executor driver) (4/10)
+24/08/07 00:59:11 ERROR DiffJobSession: Inserted missing row in target: [2 %% x]
+24/08/07 00:59:11 INFO Executor: Finished task 4.0 in stage 0.0 (TID 4). 938 bytes result sent to driver
+24/08/07 00:59:11 INFO TaskSetManager: Starting task 6.0 in stage 0.0 (TID 6) (ip-10-166-69-127.us-west-2.compute.internal, executor driver, partition 6, PROCESS_LOCAL, 8324 bytes) 
+24/08/07 00:59:11 INFO Executor: Running task 6.0 in stage 0.0 (TID 6)
+24/08/07 00:59:11 INFO TaskSetManager: Finished task 4.0 in stage 0.0 (TID 4) in 37 ms on ip-10-166-69-127.us-west-2.compute.internal (executor driver) (5/10)
+24/08/07 00:59:11 INFO DiffJobSession: ThreadID: 69 Processing min: 5534023222112865488 max: 7378697629483820649
+24/08/07 00:59:11 INFO DiffJobSession: ThreadID: 68 Processing min: -5534023222112865484 max: -3689348814741910323
+24/08/07 00:59:11 INFO Executor: Finished task 6.0 in stage 0.0 (TID 6). 938 bytes result sent to driver
+24/08/07 00:59:11 INFO Executor: Finished task 5.0 in stage 0.0 (TID 5). 938 bytes result sent to driver
+24/08/07 00:59:11 INFO TaskSetManager: Starting task 7.0 in stage 0.0 (TID 7) (ip-10-166-69-127.us-west-2.compute.internal, executor driver, partition 7, PROCESS_LOCAL, 8324 bytes) 
+24/08/07 00:59:11 INFO Executor: Running task 7.0 in stage 0.0 (TID 7)
+24/08/07 00:59:11 INFO TaskSetManager: Starting task 8.0 in stage 0.0 (TID 8) (ip-10-166-69-127.us-west-2.compute.internal, executor driver, partition 8, PROCESS_LOCAL, 8324 bytes) 
+24/08/07 00:59:11 INFO Executor: Running task 8.0 in stage 0.0 (TID 8)
+24/08/07 00:59:11 INFO TaskSetManager: Finished task 6.0 in stage 0.0 (TID 6) in 37 ms on ip-10-166-69-127.us-west-2.compute.internal (executor driver) (6/10)
+24/08/07 00:59:11 INFO TaskSetManager: Finished task 5.0 in stage 0.0 (TID 5) in 48 ms on ip-10-166-69-127.us-west-2.compute.internal (executor driver) (7/10)
+24/08/07 00:59:11 INFO DiffJobSession: ThreadID: 68 Processing min: -9223372036854775808 max: -7378697629483820647
+24/08/07 00:59:11 INFO DiffJobSession: ThreadID: 69 Processing min: -7378697629483820646 max: -5534023222112865485
+24/08/07 00:59:11 INFO Executor: Finished task 7.0 in stage 0.0 (TID 7). 938 bytes result sent to driver
+24/08/07 00:59:11 INFO Executor: Finished task 8.0 in stage 0.0 (TID 8). 938 bytes result sent to driver
+24/08/07 00:59:11 INFO TaskSetManager: Starting task 9.0 in stage 0.0 (TID 9) (ip-10-166-69-127.us-west-2.compute.internal, executor driver, partition 9, PROCESS_LOCAL, 8324 bytes) 
+24/08/07 00:59:11 INFO Executor: Running task 9.0 in stage 0.0 (TID 9)
+24/08/07 00:59:11 INFO DiffJobSession: ThreadID: 68 Processing min: -3689348814741910322 max: -1844674407370955161
+24/08/07 00:59:11 INFO TaskSetManager: Finished task 7.0 in stage 0.0 (TID 7) in 56 ms on ip-10-166-69-127.us-west-2.compute.internal (executor driver) (8/10)
+24/08/07 00:59:11 INFO TaskSetManager: Finished task 8.0 in stage 0.0 (TID 8) in 50 ms on ip-10-166-69-127.us-west-2.compute.internal (executor driver) (9/10)
+24/08/07 00:59:11 INFO Executor: Finished task 9.0 in stage 0.0 (TID 9). 938 bytes result sent to driver
+24/08/07 00:59:11 INFO TaskSetManager: Finished task 9.0 in stage 0.0 (TID 9) in 27 ms on ip-10-166-69-127.us-west-2.compute.internal (executor driver) (10/10)
+24/08/07 00:59:11 INFO DAGScheduler: ResultStage 0 (foreach at DiffData.scala:29) finished in 0.694 s
+24/08/07 00:59:11 INFO TaskSchedulerImpl: Removed TaskSet 0.0, whose tasks have all completed, from pool 
+24/08/07 00:59:11 INFO DAGScheduler: Job 0 is finished. Cancelling potential speculative or zombie tasks for this job
+24/08/07 00:59:11 INFO TaskSchedulerImpl: Killing all running tasks in stage 0: Stage finished
+24/08/07 00:59:11 INFO DAGScheduler: Job 0 finished: foreach at DiffData.scala:29, took 0.792438 s
+24/08/07 00:59:11 INFO JobCounter: ################################################################################################
+24/08/07 00:59:11 INFO JobCounter: Final Read Record Count: 6
+24/08/07 00:59:11 INFO JobCounter: Final Mismatch Record Count: 0
+24/08/07 00:59:11 INFO JobCounter: Final Corrected Mismatch Record Count: 0
+24/08/07 00:59:11 INFO JobCounter: Final Missing Record Count: 3
+24/08/07 00:59:11 INFO JobCounter: Final Corrected Missing Record Count: 3
+24/08/07 00:59:11 INFO JobCounter: Final Valid Record Count: 3
+24/08/07 00:59:11 INFO JobCounter: Final Skipped Record Count: 0
+24/08/07 00:59:11 INFO JobCounter: ################################################################################################
+24/08/07 00:59:11 INFO SparkContext: SparkContext is stopping with exitCode 0.
+24/08/07 00:59:12 INFO SparkUI: Stopped Spark web UI at http://ip-10-166-69-127.us-west-2.compute.internal:4040
+24/08/07 00:59:12 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+24/08/07 00:59:12 INFO MemoryStore: MemoryStore cleared
+24/08/07 00:59:12 INFO BlockManager: BlockManager stopped
+24/08/07 00:59:12 INFO BlockManagerMaster: BlockManagerMaster stopped
+24/08/07 00:59:12 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+24/08/07 00:59:12 INFO SparkContext: Successfully stopped SparkContext
+24/08/07 00:59:12 INFO DiffData$: ################################################################################################
+24/08/07 00:59:12 INFO DiffData$: ###                              Data Validation Job - Stopped                               ###
+24/08/07 00:59:12 INFO DiffData$: ################################################################################################
+24/08/07 00:59:12 INFO ShutdownHookManager: Shutdown hook called
+24/08/07 00:59:12 INFO ShutdownHookManager: Deleting directory /tmp/spark-3dc630e5-d5d4-45e3-b0b9-bc4d1e0c9f1f
+24/08/07 00:59:12 INFO ShutdownHookManager: Deleting directory /tmp/spark-50bf8b0f-86ca-4b88-b965-eae32b4d94e1
+24/08/07 00:59:12 INFO CassandraConnector: Disconnected from Cassandra cluster.
+24/08/07 00:59:12 INFO CassandraConnector: Disconnected from Cassandra cluster.
+24/08/07 00:59:12 INFO SerialShutdownHooks: Successfully executed shutdown hook: Clearing session cache for C* connector
