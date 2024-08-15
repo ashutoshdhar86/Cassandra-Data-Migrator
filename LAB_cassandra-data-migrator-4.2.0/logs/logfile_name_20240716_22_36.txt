@@ -1,0 +1,2 @@
+/home/automaton/spark-3.5.1-bin-hadoop3-scala2.13/bin/spark-class: line 71: /usr/lib/jvm/java-1.8.0-openjdk/bin/java: No such file or directory
+/home/automaton/spark-3.5.1-bin-hadoop3-scala2.13/bin/spark-class: line 97: CMD: bad array subscript

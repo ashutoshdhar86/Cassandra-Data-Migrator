@@ -1,0 +1,185 @@
+24/07/21 15:12:43 INFO Migrate$: ################################################################################################
+24/07/21 15:12:43 INFO Migrate$: ###                                  Migrate Job - Starting                                  ###
+24/07/21 15:12:43 INFO Migrate$: ################################################################################################
+24/07/21 15:12:43 INFO SparkContext: Running Spark version 3.5.1
+24/07/21 15:12:43 INFO SparkContext: OS info Linux, 4.18.0-553.6.1.el8.x86_64, amd64
+24/07/21 15:12:43 INFO SparkContext: Java version 11.0.20.1
+24/07/21 15:12:43 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+24/07/21 15:12:43 INFO ResourceUtils: ==============================================================
+24/07/21 15:12:43 INFO ResourceUtils: No custom resources configured for spark.driver.
+24/07/21 15:12:43 INFO ResourceUtils: ==============================================================
+24/07/21 15:12:43 INFO SparkContext: Submitted application: Migrate Job
+24/07/21 15:12:43 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+24/07/21 15:12:43 INFO ResourceProfile: Limiting resource is cpu
+24/07/21 15:12:43 INFO ResourceProfileManager: Added ResourceProfile id: 0
+24/07/21 15:12:43 INFO SecurityManager: Changing view acls to: automaton
+24/07/21 15:12:43 INFO SecurityManager: Changing modify acls to: automaton
+24/07/21 15:12:43 INFO SecurityManager: Changing view acls groups to: 
+24/07/21 15:12:43 INFO SecurityManager: Changing modify acls groups to: 
+24/07/21 15:12:43 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: automaton; groups with view permissions: EMPTY; users with modify permissions: automaton; groups with modify permissions: EMPTY
+24/07/21 15:12:44 INFO Utils: Successfully started service 'sparkDriver' on port 34769.
+24/07/21 15:12:44 INFO SparkEnv: Registering MapOutputTracker
+24/07/21 15:12:44 INFO SparkEnv: Registering BlockManagerMaster
+24/07/21 15:12:44 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+24/07/21 15:12:44 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+24/07/21 15:12:44 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+24/07/21 15:12:44 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-32936859-6311-46d9-9c8b-b30aeaf89f40
+24/07/21 15:12:44 INFO MemoryStore: MemoryStore started with capacity 1048.8 MiB
+24/07/21 15:12:44 INFO SparkEnv: Registering OutputCommitCoordinator
+24/07/21 15:12:44 INFO JettyUtils: Start Jetty 0.0.0.0:4040 for SparkUI
+24/07/21 15:12:44 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+24/07/21 15:12:44 INFO SparkContext: Added JAR file:/home/automaton/cassandra-data-migrator-4.2.0.jar at spark://ip-10-166-69-127.us-west-2.compute.internal:34769/jars/cassandra-data-migrator-4.2.0.jar with timestamp 1721574763449
+24/07/21 15:12:45 INFO Executor: Starting executor ID driver on host ip-10-166-69-127.us-west-2.compute.internal
+24/07/21 15:12:45 INFO Executor: OS info Linux, 4.18.0-553.6.1.el8.x86_64, amd64
+24/07/21 15:12:45 INFO Executor: Java version 11.0.20.1
+24/07/21 15:12:45 INFO Executor: Starting executor with user classpath (userClassPathFirst = false): ''
+24/07/21 15:12:45 INFO Executor: Created or updated repl class loader org.apache.spark.util.MutableURLClassLoader@6e3ecf5c for default.
+24/07/21 15:12:45 INFO Executor: Fetching spark://ip-10-166-69-127.us-west-2.compute.internal:34769/jars/cassandra-data-migrator-4.2.0.jar with timestamp 1721574763449
+24/07/21 15:12:45 INFO TransportClientFactory: Successfully created connection to ip-10-166-69-127.us-west-2.compute.internal/10.166.69.127:34769 after 46 ms (0 ms spent in bootstraps)
+24/07/21 15:12:45 INFO Utils: Fetching spark://ip-10-166-69-127.us-west-2.compute.internal:34769/jars/cassandra-data-migrator-4.2.0.jar to /tmp/spark-f4dbaec6-d1b6-434b-a1c5-3f3999bfb90a/userFiles-4ae67f8d-548b-41ff-9998-75cea7e1e145/fetchFileTemp671031091962385614.tmp
+24/07/21 15:12:45 INFO Executor: Adding file:/tmp/spark-f4dbaec6-d1b6-434b-a1c5-3f3999bfb90a/userFiles-4ae67f8d-548b-41ff-9998-75cea7e1e145/cassandra-data-migrator-4.2.0.jar to class loader default
+24/07/21 15:12:45 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 37265.
+24/07/21 15:12:45 INFO NettyBlockTransferService: Server created on ip-10-166-69-127.us-west-2.compute.internal:37265
+24/07/21 15:12:45 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+24/07/21 15:12:45 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, ip-10-166-69-127.us-west-2.compute.internal, 37265, None)
+24/07/21 15:12:45 INFO BlockManagerMasterEndpoint: Registering block manager ip-10-166-69-127.us-west-2.compute.internal:37265 with 1048.8 MiB RAM, BlockManagerId(driver, ip-10-166-69-127.us-west-2.compute.internal, 37265, None)
+24/07/21 15:12:45 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, ip-10-166-69-127.us-west-2.compute.internal, 37265, None)
+24/07/21 15:12:45 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, ip-10-166-69-127.us-west-2.compute.internal, 37265, None)
+24/07/21 15:12:45 INFO PropertyHelper: Processing explicitly set and known sparkConf properties
+24/07/21 15:12:45 INFO PropertyHelper: Known property [spark.cdm.autocorrect.missing] is configured with value [false] and is type [BOOLEAN]
+24/07/21 15:12:45 INFO PropertyHelper: Known property [spark.cdm.connect.origin.host] is configured with value [10.166.65.33] and is type [STRING]
+24/07/21 15:12:45 INFO PropertyHelper: Known property [spark.cdm.perfops.numParts] is configured with value [10] and is type [NUMBER]
+24/07/21 15:12:45 INFO PropertyHelper: Known property [spark.cdm.schema.origin.keyspaceTable] is configured with value [ks1.list_data] and is type [STRING]
+24/07/21 15:12:45 INFO PropertyHelper: Known property [spark.cdm.connect.origin.password] is configured with value [********] and is type [STRING]
+24/07/21 15:12:45 INFO PropertyHelper: Known property [spark.cdm.connect.target.password] is configured with value [********] and is type [STRING]
+24/07/21 15:12:45 INFO PropertyHelper: Known property [spark.cdm.connect.target.username] is configured with value [cassandra] and is type [STRING]
+24/07/21 15:12:45 INFO PropertyHelper: Known property [spark.cdm.autocorrect.mismatch] is configured with value [false] and is type [BOOLEAN]
+24/07/21 15:12:45 INFO PropertyHelper: Known property [spark.cdm.connect.target.host] is configured with value [10.166.65.248] and is type [STRING]
+24/07/21 15:12:45 INFO PropertyHelper: Known property [spark.cdm.connect.target.port] is configured with value [9042] and is type [NUMBER]
+24/07/21 15:12:45 INFO PropertyHelper: Known property [spark.cdm.connect.origin.port] is configured with value [9042] and is type [NUMBER]
+24/07/21 15:12:45 INFO PropertyHelper: Known property [spark.cdm.connect.origin.username] is configured with value [cassandra] and is type [STRING]
+24/07/21 15:12:45 INFO PropertyHelper: Adding any missing known properties that have default values
+24/07/21 15:12:45 INFO ConnectionFetcher: PARAM --  SSL Enabled: false
+24/07/21 15:12:45 INFO ConnectionFetcher: Connecting to ORIGIN at 10.166.65.33:9042
+24/07/21 15:12:47 INFO ConnectionFetcher: PARAM --  SSL Enabled: false
+24/07/21 15:12:47 INFO ConnectionFetcher: Connecting to TARGET at 10.166.65.248:9042
+24/07/21 15:12:47 INFO DefaultMavenCoordinates: Apache Cassandra Java Driver (org.apache.cassandra:java-driver-core-shaded) version 4.18.1
+24/07/21 15:12:48 INFO CqlPrepareAsyncProcessor: Adding handler to invalidate cached prepared statements on type changes
+24/07/21 15:12:48 INFO Clock: Using native clock for microsecond precision
+24/07/21 15:12:48 WARN PlainTextAuthProviderBase: [] /10.166.65.33:9042 did not send an authentication challenge; This is suspicious because the driver expects authentication
+24/07/21 15:12:48 WARN DefaultTopologyMonitor: [s0] Unable to determine broadcast RPC port.  Trying to fall back to port used by the control connection.
+24/07/21 15:12:49 WARN PlainTextAuthProviderBase: [] /10.166.65.33:9042 did not send an authentication challenge; This is suspicious because the driver expects authentication
+24/07/21 15:12:49 INFO CassandraConnector: Connected to Cassandra cluster.
+24/07/21 15:12:49 INFO Migrate$: PARAM -- Min Partition: -9223372036854775808
+24/07/21 15:12:49 INFO Migrate$: PARAM -- Max Partition: 9223372036854775807
+24/07/21 15:12:49 INFO Migrate$: PARAM -- Number of Splits : 10
+24/07/21 15:12:49 INFO Migrate$: PARAM -- Coverage Percent: 100
+24/07/21 15:12:49 INFO SplitPartitions: ThreadID: 1 Splitting min: -9223372036854775808 max: 9223372036854775807
+24/07/21 15:12:49 INFO Migrate$: PARAM Calculated -- Total Partitions: 10
+24/07/21 15:12:49 INFO Migrate$: Spark parallelize created : 10 slices!
+24/07/21 15:12:50 INFO SparkContext: Starting job: foreach at Migrate.scala:24
+24/07/21 15:12:50 INFO DAGScheduler: Got job 0 (foreach at Migrate.scala:24) with 10 output partitions
+24/07/21 15:12:50 INFO DAGScheduler: Final stage: ResultStage 0 (foreach at Migrate.scala:24)
+24/07/21 15:12:50 INFO DAGScheduler: Parents of final stage: List()
+24/07/21 15:12:50 INFO DAGScheduler: Missing parents: List()
+24/07/21 15:12:50 INFO DAGScheduler: Submitting ResultStage 0 (ParallelCollectionRDD[0] at parallelize at BaseJob.scala:90), which has no missing parents
+24/07/21 15:12:50 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 3.1 KiB, free 1048.8 MiB)
+24/07/21 15:12:50 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 1854.0 B, free 1048.8 MiB)
+24/07/21 15:12:50 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on ip-10-166-69-127.us-west-2.compute.internal:37265 (size: 1854.0 B, free: 1048.8 MiB)
+24/07/21 15:12:50 INFO SparkContext: Created broadcast 0 from broadcast at DAGScheduler.scala:1585
+24/07/21 15:12:50 INFO DAGScheduler: Submitting 10 missing tasks from ResultStage 0 (ParallelCollectionRDD[0] at parallelize at BaseJob.scala:90) (first 15 tasks are for partitions Vector(0, 1, 2, 3, 4, 5, 6, 7, 8, 9))
+24/07/21 15:12:50 INFO TaskSchedulerImpl: Adding task set 0.0 with 10 tasks resource profile 0
+24/07/21 15:12:50 INFO TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0) (ip-10-166-69-127.us-west-2.compute.internal, executor driver, partition 0, PROCESS_LOCAL, 8324 bytes) 
+24/07/21 15:12:50 INFO TaskSetManager: Starting task 1.0 in stage 0.0 (TID 1) (ip-10-166-69-127.us-west-2.compute.internal, executor driver, partition 1, PROCESS_LOCAL, 8324 bytes) 
+24/07/21 15:12:50 INFO Executor: Running task 0.0 in stage 0.0 (TID 0)
+24/07/21 15:12:50 INFO Executor: Running task 1.0 in stage 0.0 (TID 1)
+24/07/21 15:12:50 INFO CqlPrepareAsyncProcessor: Adding handler to invalidate cached prepared statements on type changes
+24/07/21 15:12:50 INFO Clock: Using native clock for microsecond precision
+24/07/21 15:12:50 WARN PlainTextAuthProviderBase: [] /10.166.65.248:9042 did not send an authentication challenge; This is suspicious because the driver expects authentication
+24/07/21 15:12:50 WARN PlainTextAuthProviderBase: [] /10.166.65.248:9042 did not send an authentication challenge; This is suspicious because the driver expects authentication
+24/07/21 15:12:50 INFO CassandraConnector: Connected to Cassandra cluster.
+24/07/21 15:12:50 INFO CopyJobSession: PARAM -- Max Retries: 0
+24/07/21 15:12:50 INFO CopyJobSession: PARAM -- Partition file input: ./ks1.list_data_partitions.csv
+24/07/21 15:12:50 INFO CopyJobSession: PARAM -- Partition file output: ./ks1.list_data_partitions.csv
+24/07/21 15:12:50 INFO CopyJobSession: PARAM -- Origin Rate Limit: 20000.0
+24/07/21 15:12:50 INFO CopyJobSession: PARAM -- Target Rate Limit: 40000.0
+24/07/21 15:12:50 INFO WritetimeTTL: PARAM -- Automatic TTLCols: []
+24/07/21 15:12:50 INFO WritetimeTTL: PARAM -- Automatic WriteTimestampCols: []
+24/07/21 15:12:50 INFO WritetimeTTL: Feature WritetimeTTL is enabled
+24/07/21 15:12:50 INFO CopyJobSession: CQL -- origin select: SELECT id,items FROM ks1.list_data WHERE TOKEN(id) >= ? AND TOKEN(id) <= ? ALLOW FILTERING
+24/07/21 15:12:50 INFO CopyJobSession: CQL -- target select: SELECT id,items FROM ks1.list_data WHERE id=?
+24/07/21 15:12:50 INFO CopyJobSession: CQL -- target upsert: INSERT INTO ks1.list_data (id,items) VALUES (?,?)
+24/07/21 15:12:50 INFO CopyJobSession: ThreadID: 63 Processing min: 1844674407370955164 max: 3689348814741910325
+24/07/21 15:12:50 INFO CopyJobSession: ThreadID: 64 Processing min: -3689348814741910322 max: -1844674407370955161
+24/07/21 15:12:50 INFO Executor: Finished task 0.0 in stage 0.0 (TID 0). 981 bytes result sent to driver
+24/07/21 15:12:50 INFO Executor: Finished task 1.0 in stage 0.0 (TID 1). 981 bytes result sent to driver
+24/07/21 15:12:50 INFO TaskSetManager: Starting task 2.0 in stage 0.0 (TID 2) (ip-10-166-69-127.us-west-2.compute.internal, executor driver, partition 2, PROCESS_LOCAL, 8324 bytes) 
+24/07/21 15:12:50 INFO Executor: Running task 2.0 in stage 0.0 (TID 2)
+24/07/21 15:12:50 INFO TaskSetManager: Starting task 3.0 in stage 0.0 (TID 3) (ip-10-166-69-127.us-west-2.compute.internal, executor driver, partition 3, PROCESS_LOCAL, 8317 bytes) 
+24/07/21 15:12:50 INFO Executor: Running task 3.0 in stage 0.0 (TID 3)
+24/07/21 15:12:50 INFO CopyJobSession: ThreadID: 64 Processing min: -7378697629483820646 max: -5534023222112865485
+24/07/21 15:12:50 INFO TaskSetManager: Finished task 1.0 in stage 0.0 (TID 1) in 553 ms on ip-10-166-69-127.us-west-2.compute.internal (executor driver) (1/10)
+24/07/21 15:12:50 INFO TaskSetManager: Finished task 0.0 in stage 0.0 (TID 0) in 613 ms on ip-10-166-69-127.us-west-2.compute.internal (executor driver) (2/10)
+24/07/21 15:12:50 INFO CopyJobSession: ThreadID: 63 Processing min: -1844674407370955160 max: 1
+24/07/21 15:12:50 INFO Executor: Finished task 2.0 in stage 0.0 (TID 2). 938 bytes result sent to driver
+24/07/21 15:12:51 INFO Executor: Finished task 3.0 in stage 0.0 (TID 3). 938 bytes result sent to driver
+24/07/21 15:12:51 INFO TaskSetManager: Starting task 4.0 in stage 0.0 (TID 4) (ip-10-166-69-127.us-west-2.compute.internal, executor driver, partition 4, PROCESS_LOCAL, 8324 bytes) 
+24/07/21 15:12:51 INFO Executor: Running task 4.0 in stage 0.0 (TID 4)
+24/07/21 15:12:51 INFO CopyJobSession: ThreadID: 63 Processing min: -5534023222112865484 max: -3689348814741910323
+24/07/21 15:12:51 INFO TaskSetManager: Starting task 5.0 in stage 0.0 (TID 5) (ip-10-166-69-127.us-west-2.compute.internal, executor driver, partition 5, PROCESS_LOCAL, 8324 bytes) 
+24/07/21 15:12:51 INFO TaskSetManager: Finished task 2.0 in stage 0.0 (TID 2) in 67 ms on ip-10-166-69-127.us-west-2.compute.internal (executor driver) (3/10)
+24/07/21 15:12:51 INFO Executor: Running task 5.0 in stage 0.0 (TID 5)
+24/07/21 15:12:51 INFO TaskSetManager: Finished task 3.0 in stage 0.0 (TID 3) in 60 ms on ip-10-166-69-127.us-west-2.compute.internal (executor driver) (4/10)
+24/07/21 15:12:51 INFO CopyJobSession: ThreadID: 64 Processing min: -9223372036854775808 max: -7378697629483820647
+24/07/21 15:12:51 INFO Executor: Finished task 5.0 in stage 0.0 (TID 5). 938 bytes result sent to driver
+24/07/21 15:12:51 INFO TaskSetManager: Starting task 6.0 in stage 0.0 (TID 6) (ip-10-166-69-127.us-west-2.compute.internal, executor driver, partition 6, PROCESS_LOCAL, 8324 bytes) 
+24/07/21 15:12:51 INFO TaskSetManager: Finished task 5.0 in stage 0.0 (TID 5) in 39 ms on ip-10-166-69-127.us-west-2.compute.internal (executor driver) (5/10)
+24/07/21 15:12:51 INFO Executor: Running task 6.0 in stage 0.0 (TID 6)
+24/07/21 15:12:51 INFO CopyJobSession: ThreadID: 64 Processing min: 5534023222112865488 max: 7378697629483820649
+24/07/21 15:12:51 INFO Executor: Finished task 6.0 in stage 0.0 (TID 6). 938 bytes result sent to driver
+24/07/21 15:12:51 INFO TaskSetManager: Starting task 7.0 in stage 0.0 (TID 7) (ip-10-166-69-127.us-west-2.compute.internal, executor driver, partition 7, PROCESS_LOCAL, 8324 bytes) 
+24/07/21 15:12:51 INFO TaskSetManager: Finished task 6.0 in stage 0.0 (TID 6) in 36 ms on ip-10-166-69-127.us-west-2.compute.internal (executor driver) (6/10)
+24/07/21 15:12:51 INFO Executor: Running task 7.0 in stage 0.0 (TID 7)
+24/07/21 15:12:51 INFO CopyJobSession: ThreadID: 64 Processing min: 3689348814741910326 max: 5534023222112865487
+24/07/21 15:12:51 INFO Executor: Finished task 4.0 in stage 0.0 (TID 4). 938 bytes result sent to driver
+24/07/21 15:12:51 INFO TaskSetManager: Starting task 8.0 in stage 0.0 (TID 8) (ip-10-166-69-127.us-west-2.compute.internal, executor driver, partition 8, PROCESS_LOCAL, 8324 bytes) 
+24/07/21 15:12:51 INFO TaskSetManager: Finished task 4.0 in stage 0.0 (TID 4) in 105 ms on ip-10-166-69-127.us-west-2.compute.internal (executor driver) (7/10)
+24/07/21 15:12:51 INFO Executor: Running task 8.0 in stage 0.0 (TID 8)
+24/07/21 15:12:51 INFO Executor: Finished task 7.0 in stage 0.0 (TID 7). 981 bytes result sent to driver
+24/07/21 15:12:51 INFO TaskSetManager: Starting task 9.0 in stage 0.0 (TID 9) (ip-10-166-69-127.us-west-2.compute.internal, executor driver, partition 9, PROCESS_LOCAL, 8317 bytes) 
+24/07/21 15:12:51 INFO TaskSetManager: Finished task 7.0 in stage 0.0 (TID 7) in 40 ms on ip-10-166-69-127.us-west-2.compute.internal (executor driver) (8/10)
+24/07/21 15:12:51 INFO Executor: Running task 9.0 in stage 0.0 (TID 9)
+24/07/21 15:12:51 INFO CopyJobSession: ThreadID: 74 Processing min: 7378697629483820650 max: 9223372036854775807
+24/07/21 15:12:51 INFO CopyJobSession: ThreadID: 64 Processing min: 2 max: 1844674407370955163
+24/07/21 15:12:51 INFO Executor: Finished task 8.0 in stage 0.0 (TID 8). 938 bytes result sent to driver
+24/07/21 15:12:51 INFO Executor: Finished task 9.0 in stage 0.0 (TID 9). 938 bytes result sent to driver
+24/07/21 15:12:51 INFO TaskSetManager: Finished task 8.0 in stage 0.0 (TID 8) in 45 ms on ip-10-166-69-127.us-west-2.compute.internal (executor driver) (9/10)
+24/07/21 15:12:51 INFO TaskSetManager: Finished task 9.0 in stage 0.0 (TID 9) in 36 ms on ip-10-166-69-127.us-west-2.compute.internal (executor driver) (10/10)
+24/07/21 15:12:51 INFO DAGScheduler: ResultStage 0 (foreach at Migrate.scala:24) finished in 1.043 s
+24/07/21 15:12:51 INFO TaskSchedulerImpl: Removed TaskSet 0.0, whose tasks have all completed, from pool 
+24/07/21 15:12:51 INFO DAGScheduler: Job 0 is finished. Cancelling potential speculative or zombie tasks for this job
+24/07/21 15:12:51 INFO TaskSchedulerImpl: Killing all running tasks in stage 0: Stage finished
+24/07/21 15:12:51 INFO DAGScheduler: Job 0 finished: foreach at Migrate.scala:24, took 1.124591 s
+24/07/21 15:12:51 INFO JobCounter: ################################################################################################
+24/07/21 15:12:51 INFO JobCounter: Final Read Record Count: 1
+24/07/21 15:12:51 INFO JobCounter: Final Skipped Record Count: 0
+24/07/21 15:12:51 INFO JobCounter: Final Write Record Count: 1
+24/07/21 15:12:51 INFO JobCounter: Final Error Record Count: 0
+24/07/21 15:12:51 INFO JobCounter: ################################################################################################
+24/07/21 15:12:51 INFO SparkContext: SparkContext is stopping with exitCode 0.
+24/07/21 15:12:51 INFO SparkUI: Stopped Spark web UI at http://ip-10-166-69-127.us-west-2.compute.internal:4040
+24/07/21 15:12:51 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+24/07/21 15:12:51 INFO MemoryStore: MemoryStore cleared
+24/07/21 15:12:51 INFO BlockManager: BlockManager stopped
+24/07/21 15:12:51 INFO BlockManagerMaster: BlockManagerMaster stopped
+24/07/21 15:12:51 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+24/07/21 15:12:51 INFO SparkContext: Successfully stopped SparkContext
+24/07/21 15:12:51 INFO Migrate$: ################################################################################################
+24/07/21 15:12:51 INFO Migrate$: ###                                  Migrate Job - Stopped                                   ###
+24/07/21 15:12:51 INFO Migrate$: ################################################################################################
+24/07/21 15:12:51 INFO ShutdownHookManager: Shutdown hook called
+24/07/21 15:12:51 INFO ShutdownHookManager: Deleting directory /tmp/spark-f4dbaec6-d1b6-434b-a1c5-3f3999bfb90a
+24/07/21 15:12:51 INFO ShutdownHookManager: Deleting directory /tmp/spark-d7765d26-e9dd-438e-9300-62d4a98805e3
+24/07/21 15:12:51 INFO CassandraConnector: Disconnected from Cassandra cluster.
+24/07/21 15:12:51 INFO CassandraConnector: Disconnected from Cassandra cluster.
+24/07/21 15:12:51 INFO SerialShutdownHooks: Successfully executed shutdown hook: Clearing session cache for C* connector
